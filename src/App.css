@@ -2,9 +2,42 @@
   text-align: center;
 }
 
+.prop {
+  margin-top:20px;
+  margin-left: 30px;
+  background-color: #d4a8ab;
+  width: 400px;
+
+}
+
+.usestate {
+  background-color: blueviolet;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  margin-bottom: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.avatar {
+  height: 40vmin;
+}
+
+.h1 {
+  text-align: center;
+  background-color: rgb(255, 57, 225);
+  color: rgb(0, 0, 0);
+}
+
+.p {
+  text-align: center;
+  color: rgb(245, 140, 3);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +65,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
