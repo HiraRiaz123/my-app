@@ -3,7 +3,7 @@
 }
 
 .prop {
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: 30px;
   background-color: #d4a8ab;
   width: 400px;
@@ -46,6 +46,34 @@
   }
 }
 
+.form {
+  text-align: center;
+  /* background-color: red; */
+}
+
+.form h1 {
+  background-color: purple;
+  height: 50px;
+  width: 700px;
+}
+
+.form .body {
+  background-color: whitesmoke;
+  height: 240px;
+  width: 700px;
+  margin-left: 300px;
+}
+.form input{
+  width: 400px;
+  height:20px
+}
+
+.form button{
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  background-color:rosybrown ;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

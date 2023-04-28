@@ -5,6 +5,7 @@ import { createContext } from 'react';
 import First from './practice/First';
 import Form from './practice/ConForm';
 import UnForm from './practice/UnForm';
+import Register from './practice/Register';
 const data = createContext();
 const data1 = createContext();
 const data2 = createContext();
@@ -12,6 +13,10 @@ function App() {
   const name = 'Hira Riaz'
   const age = "22"
   const weight = "70"
+  function getDatail(fname, lname) {
+    console.log(fname)
+    console.log(lname)
+  }
   return (
     <div className="App">
       <Usestate />
@@ -26,8 +31,9 @@ function App() {
       <Hy name="Rida" age="26" weight="72" gender="Female" imageUrl='B612_20180217_223147.jpg' />
       <Hy name="Hira" age="24" weight="70" gender="Female" imageUrl='B612_20190406_201535_698.jpg' />
       <Hy name="Hamayun" age="20" weight="65" gender="Male" imageUrl='B612_20190419_141830_371.jpg' />
-      <Form />
+      <Form getName={getDatail} />
       <UnForm />
+      <Register />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-function Form() {
+function Form(dataTransfer) {
     const [fname, setFname] = useState();
     const [lname, setLname] = useState();
     function handleInput(e) {
@@ -11,10 +11,15 @@ function Form() {
             setLname(e.target.value)
         }
     }
+    function handleSubmit(e) {
+        e.preventDefault()
+        dataTransfer.getName(fname,lname)
+        // console.log(dataTransfer)
+    }
     return (
         <div>
             <h1 className="h1">New Form</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>First name:</label><br />
                 <input type="text" name="first" value={fname} onChange={handleInput} /><br />
                 <label>Last name:</label><br />
