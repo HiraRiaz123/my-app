@@ -19,7 +19,7 @@ function TodoList() {
     }
     function removeTask(i) {
         const removeOneTask = listData.filter((elem, id) => {
-            return i != id;
+            return i !== id;
         })
         setListData(removeOneTask)
     }
@@ -35,7 +35,7 @@ function TodoList() {
             <input type="text" name="task" value={task} placeholder="Enter task" onChange={(e) => setTask(e.target.value)} />
             <button onClick={addTask}>Add</button>
             <h3>LIST IS HERE:{")"}</h3>
-            {listData != [] && listData.map((data, i) => {
+            {listData !== [] && listData.map((data, i) => {
                 return (
                     <>
                         <p key={i}>
