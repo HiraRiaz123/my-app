@@ -6,6 +6,8 @@ import First from './practice/First';
 import Form from './practice/ConForm';
 import UnForm from './practice/UnForm';
 import Register from './practice/Register';
+import Map from './practice/Map';
+import TodoList from './practice/TodoList';
 const data = createContext();
 const data1 = createContext();
 const data2 = createContext();
@@ -34,6 +36,8 @@ function App() {
       <Form getName={getDatail} />
       <UnForm />
       <Register />
+      <Map />
+      <TodoList />
     </div>
   );
 }

@@ -20,6 +20,13 @@
   margin-bottom: 10px;
 }
 
+.TodoButton {
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: rosybrown;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -59,21 +66,23 @@
 
 .form .body {
   background-color: whitesmoke;
-  height: 240px;
+  height: 260px;
   width: 700px;
   margin-left: 300px;
 }
-.form input{
+
+.form input {
   width: 400px;
-  height:20px
+  height: 20px
 }
 
-.form button{
+.form button {
   width: 130px;
   height: 35px;
   border-radius: 10px;
-  background-color:rosybrown ;
+  background-color: rosybrown;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -83,6 +92,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.container{
+  background-color: blueviolet;
+  justify-content: center;
+  width: 50%;
+  margin-left: 26%;
+  margin-top: 5%;
+  padding: 20px;
+  text-align: center;
 }
 
 .App-link {
