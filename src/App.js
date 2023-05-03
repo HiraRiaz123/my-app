@@ -8,6 +8,7 @@ import UnForm from './practice/UnForm';
 import Register from './project/Register';
 import Map from './practice/Map';
 import TodoList from './project/TodoList';
+import Redux from './practice/Redux';
 const data = createContext();
 const data1 = createContext();
 const data2 = createContext();
@@ -38,6 +39,7 @@ function App() {
       <Register />
       <Map />
       <TodoList />
+      <Redux />
     </div>
   );
 }
